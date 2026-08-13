@@ -1,0 +1,22 @@
+{
+  "slug": "ai-investment-cycle",
+  "title": "The AI investment cycle",
+  "deck": "Capital is arriving before the cash flows. The question is not whether AI is real, but how much of the buildout can earn its cost of capital.",
+  "category": "Technology",
+  "date": "18 Jun 2025",
+  "read": "18 min",
+  "author": "NEXUS Research",
+  "accent": "teal",
+  "takeaway": "The base case is a multi-year infrastructure cycle with near-term margin pressure. Value accrues first to scarce compute and later to distribution.",
+  "sections": [
+    { "title": "The buildout is the story", "body": "Hyperscaler capital expenditure is becoming the cleanest observable measure of conviction. Spending is broadening beyond training clusters into networking, power, and inference capacity. That broadening is healthy for the cycle, but it also raises the break-even threshold." },
+    { "title": "Scarcity moves up the stack", "body": "The leading constraint has migrated from model access to power, advanced packaging, and time-to-deploy. This makes the cycle less like a software launch and more like a semiconductor expansion with software-shaped demand." },
+    { "title": "What would change our view", "body": "We would become more constructive on durable software capture if inference prices stabilize while seat expansion continues. We would turn cautious if capex growth persists alongside falling utilization and shortening contract duration." }
+  ],
+  "scenarios": [
+    { "name": "Bull", "probability": 25, "impact": "High upside", "summary": "Agents create measurable labor leverage; utilization compounds into software margins.", "color": "teal" },
+    { "name": "Base", "probability": 55, "impact": "Constructive", "summary": "Infrastructure earns through steady workload migration; returns normalize over time.", "color": "amber" },
+    { "name": "Bear", "probability": 20, "impact": "Material downside", "summary": "Overbuild meets commoditizing inference and the capex payback stretches out.", "color": "red" }
+  ],
+  "sources": ["Alphabet, Microsoft, Amazon filings", "Stanford AI Index 2025", "NEXUS estimates"]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "semiconductor-risks",
+  "title": "Semiconductor risks: the map is changing",
+  "deck": "The chip supply chain is diversifying, but concentration is not disappearing. It is moving into new bottlenecks.",
+  "category": "Technology",
+  "date": "20 Jun 2025",
+  "read": "16 min",
+  "author": "NEXUS Industry Desk",
+  "accent": "teal",
+  "takeaway": "More fabs do not automatically mean more resilience. Advanced packaging, power, and tooling remain highly concentrated.",
+  "sections": [
+    { "title": "Resilience has a cost", "body": "Redundant capacity is not free capacity. Regional incentives are accelerating construction, while utilization and labor pools remain geographically uneven." },
+    { "title": "The Taiwan variable", "body": "Geopolitical concentration is the most visible risk, but the practical shock channels are operational: lead times, packaging, shipping insurance, and customer allocation." },
+    { "title": "Signals before the headline", "body": "Watch equipment orders, substrate inventories, and foundry lead times before relying on end-market revenue. These indicators move earlier in the cycle." }
+  ],
+  "scenarios": [
+    { "name": "Bull", "probability": 25, "impact": "Supply relief", "summary": "Capacity arrives in sequence and AI demand absorbs the incremental wafer supply.", "color": "teal" },
+    { "name": "Base", "probability": 55, "impact": "Uneven", "summary": "Leading-edge remains tight while mature nodes normalize gradually.", "color": "amber" },
+    { "name": "Bear", "probability": 20, "impact": "Dislocation", "summary": "A policy or geopolitical shock overwhelms buffer inventory.", "color": "red" }
+  ],
+  "sources": ["WSTS", "Taiwan Semiconductor filings", "NEXUS supply-chain model"]
+}

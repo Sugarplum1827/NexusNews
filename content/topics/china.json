@@ -1,0 +1,37 @@
+{
+  "slug": "china",
+  "name": "China",
+  "eyebrow": "Geopolitics / Economy",
+  "definition": "China is the world’s largest manufacturing economy and a central node in global trade, technology supply chains, and the market for industrial demand.",
+  "happening": "Policy is prioritizing advanced manufacturing and strategic autonomy while domestic demand remains uneven. Export competitiveness is rising in clean technology and machinery, widening trade friction with major partners.",
+  "why": "China changes the marginal price of goods, the structure of supply chains, and the bargaining power of technology platforms. It is both a growth question and a source of regime-level tail risk.",
+  "risk": "An escalation in trade restrictions or a disorderly property deleveraging could transmit through commodities, industrial earnings, and cross-border capital flows.",
+  "monitor": [
+    "Property starts and land sales",
+    "Export orders and shipping rates",
+    "Industrial policy announcements",
+    "CNY fixing and capital flows"
+  ],
+  "tags": ["trade", "manufacturing", "property", "policy"],
+  "category": "Geopolitics",
+  "updated": "05 Jun 2025",
+  "keyFigure": "31.7%",
+  "figureLabel": "share of global manufacturing output",
+  "timeline": [
+    { "year": "2018", "event": "US–China tariff regime begins" },
+    { "year": "2021", "event": "Common prosperity reframes domestic policy" },
+    { "year": "2023", "event": "Property adjustment becomes the central drag" },
+    { "year": "2025", "event": "Overcapacity becomes a trade flashpoint" }
+  ],
+  "sources": ["China National Bureau of Statistics", "WTO trade data", "NEXUS synthesis"],
+  "related": ["semiconductors", "federal-reserve"],
+  "chart": [
+    { "period": "2019", "value": 24, "secondary": 44 },
+    { "period": "2020", "value": 25, "secondary": 41 },
+    { "period": "2021", "value": 27, "secondary": 46 },
+    { "period": "2022", "value": 28, "secondary": 43 },
+    { "period": "2023", "value": 30, "secondary": 47 },
+    { "period": "2024", "value": 31, "secondary": 51 },
+    { "period": "2025E", "value": 32, "secondary": 54 }
+  ]
+}

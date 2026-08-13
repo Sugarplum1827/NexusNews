@@ -1,0 +1,38 @@
+{
+  "slug": "federal-reserve",
+  "name": "Federal Reserve",
+  "eyebrow": "Macro / Institution",
+  "definition": "The Federal Reserve is the central bank of the United States, responsible for monetary policy, financial stability, and the resilience of the banking system.",
+  "happening": "Policy has shifted from the speed of tightening to the duration of restriction. The committee is balancing a cooling labor market against services inflation that remains uneven across housing and other domestic categories.",
+  "why": "The Fed is a pricing mechanism for almost every asset: its path changes the discount rate, the dollar, credit availability, and the probability distribution around growth. A small change in the reaction function can matter more than a large change in the current rate.",
+  "risk": "A late response to renewed inflation could force a second tightening impulse. Conversely, holding restrictive policy too long could turn a controlled slowdown into a credit event.",
+  "monitor": [
+    "Core PCE three-month annualized rate",
+    "Payrolls diffusion and revisions",
+    "Bank lending standards",
+    "Treasury term premium"
+  ],
+  "tags": ["rates", "inflation", "liquidity", "dollar"],
+  "category": "Macro",
+  "updated": "12 Jun 2025",
+  "keyFigure": "4.33%",
+  "figureLabel": "upper bound of target range",
+  "timeline": [
+    { "year": "2022", "event": "Fastest hiking cycle since the early 1980s" },
+    { "year": "2023", "event": "Policy reaches restrictive territory" },
+    { "year": "2024", "event": "Cuts begin as inflation moderates" },
+    { "year": "2025", "event": "Optionality replaces forward guidance" }
+  ],
+  "sources": ["Federal Reserve statements", "BLS, BEA", "NEXUS synthesis"],
+  "related": ["china"],
+  "chart": [
+    { "period": "Jan", "value": 5.33, "secondary": 3.1 },
+    { "period": "Mar", "value": 5.33, "secondary": 3.0 },
+    { "period": "May", "value": 5.33, "secondary": 2.9 },
+    { "period": "Jul", "value": 5.08, "secondary": 2.8 },
+    { "period": "Sep", "value": 4.83, "secondary": 2.7 },
+    { "period": "Nov", "value": 4.58, "secondary": 2.8 },
+    { "period": "Jan 25", "value": 4.33, "secondary": 2.9 },
+    { "period": "Mar", "value": 4.33, "secondary": 3.0 }
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  { "label": "US 10Y yield", "value": "4.24%", "change": "+0.08", "series": [3.88, 4.02, 3.91, 4.14, 4.06, 4.24], "unit": "%" },
+  { "label": "Core PCE YoY", "value": "2.66%", "change": "-0.12", "series": [2.9, 2.84, 2.78, 2.74, 2.7, 2.66], "unit": "%" },
+  { "label": "Global chip sales", "value": "$57.0B", "change": "+4.8", "series": [48, 49, 51, 52, 54, 57], "unit": "$B" },
+  { "label": "USD index", "value": "98.74", "change": "-1.3", "series": [102, 101, 100, 99, 100, 98.7], "unit": "" }
+]

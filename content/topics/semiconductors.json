@@ -1,0 +1,39 @@
+{
+  "slug": "semiconductors",
+  "name": "Semiconductors",
+  "eyebrow": "Technology / Supply chain",
+  "definition": "Semiconductors are engineered materials and devices that control electrical current; the industry spans design, fabrication, equipment, packaging, and distribution.",
+  "happening": "Leading-edge logic demand is being pulled forward by AI accelerators, while memory is recovering from a deep inventory correction. The supply chain is becoming more regional, expensive, and policy-dependent.",
+  "why": "Chips are the physical substrate for computing, communications, and industrial automation. A bottleneck in one layer can set the capacity and pricing power of the entire digital economy.",
+  "risk": "The risk map includes Taiwan concentration, export controls, cyclical overbuild, and a widening gap between leading-edge demand and mature-node utilization.",
+  "monitor": [
+    "Wafer-fab equipment bookings",
+    "HBM and DRAM contract pricing",
+    "Foundry utilization by node",
+    "Taiwan Strait risk indicators"
+  ],
+  "tags": ["AI", "hardware", "Taiwan", "capacity"],
+  "category": "Technology",
+  "updated": "20 Jun 2025",
+  "keyFigure": "$1.0T",
+  "figureLabel": "projected industry revenue in 2030",
+  "timeline": [
+    { "year": "2020", "event": "Pandemic demand exposes inventory fragility" },
+    { "year": "2022", "event": "Memory cycle turns down" },
+    { "year": "2023", "event": "AI accelerators create a new scarcity" },
+    { "year": "2025", "event": "Regional capacity race moves into construction" }
+  ],
+  "sources": ["WSTS, 2025 forecast", "Company filings", "NEXUS supply-chain model"],
+  "related": ["artificial-intelligence", "china"],
+  "chart": [
+    { "period": "Q1 23", "value": 72, "secondary": 89 },
+    { "period": "Q2 23", "value": 68, "secondary": 84 },
+    { "period": "Q3 23", "value": 76, "secondary": 90 },
+    { "period": "Q4 23", "value": 83, "secondary": 96 },
+    { "period": "Q1 24", "value": 92, "secondary": 103 },
+    { "period": "Q2 24", "value": 99, "secondary": 111 },
+    { "period": "Q3 24", "value": 107, "secondary": 118 },
+    { "period": "Q4 24", "value": 114, "secondary": 124 },
+    { "period": "Q1 25", "value": 121, "secondary": 131 }
+  ]
+}

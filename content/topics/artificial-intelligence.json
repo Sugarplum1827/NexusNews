@@ -1,0 +1,40 @@
+{
+  "slug": "artificial-intelligence",
+  "name": "Artificial Intelligence",
+  "eyebrow": "Technology / Industry",
+  "definition": "Artificial intelligence is the use of statistical models and computing systems to perform tasks that traditionally required human judgment, including perception, language, reasoning, and generation.",
+  "happening": "The industry is moving from model capability races into an infrastructure and distribution cycle. Capital expenditure is concentrating among a small group of platforms while enterprises test whether software agents can turn inference into durable productivity.",
+  "why": "AI sits at the intersection of semiconductor demand, cloud economics, labor substitution, and national industrial policy. The first-order story is compute; the second-order story is who captures the value after models become abundant.",
+  "risk": "The core risk is a mismatch between infrastructure commitments and monetized demand. Slower adoption, lower inference prices, or power constraints could compress returns before the new capacity earns out.",
+  "monitor": [
+    "Hyperscaler capex and depreciation",
+    "Inference cost per million tokens",
+    "Enterprise seat expansion",
+    "Data-center power interconnect queues"
+  ],
+  "tags": ["compute", "cloud", "productivity", "capital cycle"],
+  "category": "Technology",
+  "updated": "18 Jun 2025",
+  "keyFigure": "$326B",
+  "figureLabel": "estimated 2025 hyperscaler capex",
+  "timeline": [
+    { "year": "2022", "event": "Generative interfaces reach mass awareness" },
+    { "year": "2023", "event": "Foundation model capital cycle accelerates" },
+    { "year": "2024", "event": "Inference economics become the new battleground" },
+    { "year": "2025", "event": "Agents move from demos into controlled workflows" }
+  ],
+  "sources": ["Company filings, 2024–25", "Stanford AI Index, 2025", "NEXUS synthesis"],
+  "related": ["semiconductors", "china"],
+  "chart": [
+    { "period": "Q1 23", "value": 46, "secondary": 24 },
+    { "period": "Q2 23", "value": 57, "secondary": 29 },
+    { "period": "Q3 23", "value": 68, "secondary": 35 },
+    { "period": "Q4 23", "value": 76, "secondary": 42 },
+    { "period": "Q1 24", "value": 91, "secondary": 53 },
+    { "period": "Q2 24", "value": 104, "secondary": 62 },
+    { "period": "Q3 24", "value": 118, "secondary": 76 },
+    { "period": "Q4 24", "value": 133, "secondary": 89 },
+    { "period": "Q1 25", "value": 148, "secondary": 101 },
+    { "period": "Q2 25", "value": 161, "secondary": 116 }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "fed-rate-cycle",
+  "title": "The Fed rate cycle: from restriction to reaction",
+  "deck": "A framework for reading the policy function when inflation, employment, and financial conditions are sending different signals.",
+  "category": "Macro",
+  "date": "12 Jun 2025",
+  "read": "14 min",
+  "author": "NEXUS Macro Desk",
+  "accent": "orange",
+  "takeaway": "The next move is less important than the reaction function. Policy is restrictive, but the distribution around neutral has widened.",
+  "sections": [
+    { "title": "The rate is not the regime", "body": "The federal funds rate is a level; the regime is the committee’s tolerance for growth and inflation variance. Markets routinely price the former while missing the latter." },
+    { "title": "Why term premium matters now", "body": "Long rates can stay elevated even as the policy rate falls. A larger fiscal supply, uncertain inflation path, and more volatile growth distribution all appear in the term premium." },
+    { "title": "The practical signal set", "body": "Read payroll revisions, bank lending surveys, and services inflation together. A single monthly print should move the forecast only when it changes the underlying story." }
+  ],
+  "scenarios": [
+    { "name": "Bull", "probability": 30, "impact": "Risk-on", "summary": "Disinflation resumes and a soft landing unlocks a measured easing path.", "color": "teal" },
+    { "name": "Base", "probability": 50, "impact": "Range-bound", "summary": "The committee waits for confirmation; real rates stay positive.", "color": "amber" },
+    { "name": "Bear", "probability": 20, "impact": "Risk-off", "summary": "Services inflation re-accelerates and the easing window closes.", "color": "red" }
+  ],
+  "sources": ["Federal Reserve", "BLS and BEA", "NEXUS rates framework"]
+}
