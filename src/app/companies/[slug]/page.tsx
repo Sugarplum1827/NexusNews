@@ -128,6 +128,9 @@ export default async function CompanyPage({ params }: Props) {
         <aside className="row-start-1 lg:col-start-2 lg:row-start-auto">
           <div className="border border-border bg-card p-5 lg:sticky lg:top-24">
             <h2 className="mono text-[10px] uppercase tracking-[.18em]">Research files</h2>
+            <p className="mt-2 text-xs leading-5 text-muted-foreground">
+              The extended report includes filing checks, hypotheses, charts, and a workstream risk register.
+            </p>
             <div className="mt-3 grid divide-y divide-border text-sm">
               <a className="flex items-center justify-between gap-2 py-3 hover:underline" href={files + '.pdf'} target="_blank" rel="noopener noreferrer">View report PDF <ArrowUpRight size={14} aria-hidden /></a>
               <a className="flex items-center justify-between gap-2 py-3 hover:underline" href={files + '.pdf'} download>Download PDF <Download size={14} aria-hidden /></a>
