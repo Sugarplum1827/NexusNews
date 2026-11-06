@@ -6,6 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import {
   BookOpen,
+  Building2,
   CircleHelp,
   Database,
   FileText,
@@ -23,6 +24,7 @@ import {
 const nav = [
   { href: '/', label: 'Research desk', icon: LayoutGrid },
   { href: '/topics', label: 'Topics', icon: BookOpen },
+  { href: '/companies', label: 'Companies', icon: Building2 },
   { href: '/reports', label: 'Reports', icon: FileText },
   { href: '/data', label: 'Data', icon: Database },
   { href: '/models', label: 'Models', icon: Network },
@@ -94,7 +96,7 @@ export function Shell({ children }: { children: ReactNode }) {
         </header>
         <main className="page-enter">{children}</main>
         <footer className="border-t border-border px-5 py-8 sm:px-10">
-          <div className="flex flex-col justify-between gap-4 text-[11px] text-muted-foreground sm:flex-row"><span className="tracking-[.12em]">NEXUS / RESEARCH IN CONTEXT</span><span>Static edition · Figures are illustrative · Updated 20 Jun 2025</span></div>
+          <div className="flex flex-col justify-between gap-4 text-[11px] text-muted-foreground sm:flex-row"><span className="tracking-[.12em]">NEXUS / RESEARCH IN CONTEXT</span><span>Static edition · Check each page for its data sources</span></div>
         </footer>
       </div>
     </div>

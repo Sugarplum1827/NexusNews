@@ -1,0 +1,136 @@
+{
+  "slug": "microsoft",
+  "name": "Microsoft",
+  "ticker": "MSFT",
+  "exchange": "Nasdaq",
+  "period": "FY2025 retrospective",
+  "summary": "Microsoft reported higher cloud revenue in FY2025. The research question is how much of that demand translates into cash after the cost of adding capacity.",
+  "thesis": "The cloud franchise is strengthening, but cash generation after infrastructure investment matters more than revenue growth alone.",
+  "counterargument": "New capacity can cost cash before it is fully utilized. Strong sales may coexist with weaker cash conversion if investment stays elevated.",
+  "watch": [
+    "Operating cash flow versus cash additions to property and equipment",
+    "Cloud revenue growth and gross margin",
+    "Whether added capacity is matched by sustained customer demand"
+  ],
+  "claims": [
+    {
+      "title": "Cloud revenue rose year over year in the third quarter",
+      "detail": "Microsoft Cloud revenue was $42.4 billion in FY2025 Q3, versus $35.2 billion a year earlier.",
+      "section": "10-Q · Part I, Item 2 · Management’s Discussion and Analysis",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm#:~:text=Our%20Microsoft%20Cloud%20revenue"
+    },
+    {
+      "title": "Operating profit rose faster than sales in FY2025",
+      "detail": "Revenue increased about 15% year over year and operating income about 17%.",
+      "section": "10-K · Part II, Item 7 · Results of Operations",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm#:~:text=Highlights%20from%20fiscal%20year%202025"
+    },
+    {
+      "title": "Cash from operations reached $136.2 billion",
+      "detail": "Cash from operations increased from $118.5 billion. The cash flow statement reports investment in property and equipment separately.",
+      "section": "10-K · Part II, Item 8 · Cash Flows Statements",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm#:~:text=Net%20cash%20from%20operations"
+    }
+  ],
+  "financialPeriods": { "prior": "FY2024", "current": "FY2025" },
+  "financials": [
+    {
+      "label": "Revenue",
+      "prior": 245122,
+      "current": 281724,
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm#:~:text=Total%20revenue"
+    },
+    {
+      "label": "Operating income",
+      "prior": 109433,
+      "current": 128528,
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm#:~:text=Operating%20income"
+    },
+    {
+      "label": "Operating cash flow",
+      "prior": 118548,
+      "current": 136162,
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm#:~:text=Net%20cash%20from%20operations"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-04-30",
+      "kind": "10-Q",
+      "title": "FY2025 third-quarter filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm"
+    },
+    {
+      "date": "2025-04-30",
+      "kind": "8-K exhibit",
+      "title": "FY2025 third-quarter earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061032/msft-ex99_1.htm"
+    },
+    {
+      "date": "2025-04-30",
+      "kind": "News",
+      "title": "Associated Press coverage of the third-quarter release",
+      "url": "https://apnews.com/article/0c9702a96b50e943b0ed48bca980630c"
+    },
+    {
+      "date": "2025-07-30",
+      "kind": "10-K",
+      "title": "FY2025 annual filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2025-04-30",
+      "title": "Quarterly snapshot",
+      "detail": "The quarter supported a cloud demand thesis. Annual cash conversion was still an open question.",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm"
+    },
+    {
+      "date": "2025-07-30",
+      "title": "Annual review",
+      "detail": "The annual filing confirmed higher operating cash flow. The thesis puts more weight on what remains after infrastructure spending.",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bull",
+      "detail": "New capacity fills quickly. Cloud growth and cash generation improve together."
+    },
+    {
+      "name": "Base",
+      "detail": "Demand grows while ongoing capacity spending limits near-term cash conversion."
+    },
+    {
+      "name": "Bear",
+      "detail": "Customers expand more slowly than expected, leaving Microsoft with the cost of capacity ahead of demand."
+    }
+  ],
+  "event": {
+    "title": "FY2025 Q3 earnings",
+    "date": "2025-04-30",
+    "baseline": "2025-04-30",
+    "benchmark": "S&P 500",
+    "context": "Microsoft released earnings after the April 30 regular session. May 1 is the first regular session after the release. Other events can affect both series.",
+    "companySource": "https://investvio.com/instruments/nasdaq-msft/archive",
+    "benchmarkSource": "https://fred.stlouisfed.org/data/SP500",
+    "closes": [
+      {
+        "date": "2025-04-29",
+        "company": 394.04,
+        "benchmark": 5560.83
+      },
+      {
+        "date": "2025-04-30",
+        "company": 395.26,
+        "benchmark": 5569.06
+      },
+      {
+        "date": "2025-05-01",
+        "company": 425.4,
+        "benchmark": 5604.14
+      }
+    ]
+  }
+}
