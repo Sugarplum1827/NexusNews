@@ -14,7 +14,7 @@ export function SearchPageClient() {
   const [query, setQuery] = useState(searchParams.get('q') ?? '');
   const normalized = query.trim().toLowerCase();
   const companyResults = companyIndex.filter((item) =>
-    [item.name, item.ticker, item.exchange, item.summary].join(' ').toLowerCase().includes(normalized));
+    [item.name, item.ticker, item.exchange, item.headline, item.summary].join(' ').toLowerCase().includes(normalized));
   const topicResults = topics.filter((item) => `${item.name} ${item.category} ${item.tags.join(' ')} ${item.definition}`.toLowerCase().includes(normalized));
   const reportResults = reports.filter((item) => `${item.title} ${item.category} ${item.deck}`.toLowerCase().includes(normalized));
   return (

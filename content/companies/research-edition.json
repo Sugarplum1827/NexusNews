@@ -1,0 +1,534 @@
+[
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "ticker": "AAPL",
+    "exchange": "Nasdaq",
+    "status": "Public equity",
+    "headline": "What the iPhone rebound means for Apple’s cash engine",
+    "summary": "FY2026 cash generation improved sharply. The diligence question is how much of that improvement can survive a slower upgrade cycle.",
+    "thesis": "The integrated hardware, software, and services ecosystem supports recurring engagement and pricing power. A sustainable underwriting case still depends on iPhone mix and Services margin.",
+    "counterargument": "The FY2026 comparison benefited from strong Pro demand and a working-capital swing. Both can normalize while platform rules and manufacturing costs move against margins.",
+    "watch": [
+      "iPhone mix and Greater China sales",
+      "Services gross margin and distribution terms",
+      "Inventory, payables and cash capital expenditure"
+    ],
+    "claims": [
+      {
+        "title": "The upgrade cycle carried much of the growth",
+        "detail": "iPhone net sales rose from $209.6B to $254.1B, accounting for about 71% of the increase in consolidated net sales. The filing attributes iPhone growth primarily to Pro models.",
+        "section": "FY2026 10-K · Item 7 · Products and Services Performance",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+      },
+      {
+        "title": "Cash conversion improved faster than operating profit",
+        "detail": "Operating cash flow rose from $111.5B to $145.1B. Payables and other liabilities contributed positively, while inventory absorbed cash. The cash-flow uplift should be reconciled before extrapolation.",
+        "section": "FY2026 10-K · Item 8 · Consolidated Statements of Cash Flows",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+      },
+      {
+        "title": "Services adds a second source of profit",
+        "detail": "Services reached $123.3B of net sales. The filing cites advertising and cloud services as the principal drivers of growth. Underwrite the durability of this mix separately from hardware replacement.",
+        "section": "FY2026 10-K · Item 7 · Services",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+      }
+    ],
+    "history": [
+      [
+        2024,
+        391035,
+        123216,
+        118254,
+        9447,
+        11445
+      ],
+      [
+        2025,
+        416161,
+        133050,
+        111482,
+        12715,
+        11698
+      ],
+      [
+        2026,
+        478834,
+        158063,
+        145097,
+        9041,
+        13423
+      ]
+    ],
+    "basis": "Audited fiscal years. Cash capital expenditure is payments for property, plant and equipment. FY2026 ended September 26.",
+    "model": {
+      "growth": 0.06,
+      "margin": 0.31,
+      "da": 0.03,
+      "capex": [
+        0.028,
+        0.028,
+        0.028,
+        0.028,
+        0.028
+      ],
+      "tax": 0.2,
+      "nwc": 0.03,
+      "discount": 0.09,
+      "terminal": 0.025
+    },
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "kind": "Earnings release",
+        "title": "September quarter and full-year results",
+        "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "10-K",
+        "title": "Fiscal 2026 annual filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "Bull",
+        "detail": "Premium device mix holds and Services margin remains resilient."
+      },
+      {
+        "name": "Base",
+        "detail": "Upgrade growth moderates and Services offsets part of the slower hardware cycle."
+      },
+      {
+        "name": "Bear",
+        "detail": "Weak device demand and changes to platform terms squeeze revenue and margin."
+      }
+    ],
+    "risk": "Hardware concentration and platform regulation",
+    "gate": "Reconcile normalized working capital and run a combined iPhone mix and Services margin stress.",
+    "financing": "No control transaction is assumed. Evaluate capacity after shareholder distributions, manufacturing commitments and a normalized cash conversion bridge.",
+    "governance": "Review App Store litigation and regulatory remedies, supplier concentration, succession and privacy controls. Quantify distribution economics under alternative app terms.",
+    "asOf": "2026-11-06"
+  },
+  {
+    "slug": "microsoft",
+    "name": "Microsoft",
+    "ticker": "MSFT",
+    "exchange": "Nasdaq",
+    "status": "Public equity",
+    "headline": "Microsoft’s cloud growth is running ahead of its cash conversion",
+    "summary": "FY2026 revenue and operating cash flow rose. Cash spending on property and equipment climbed faster, so the economics depend on what the new capacity earns.",
+    "thesis": "Azure and Microsoft 365 give Microsoft established distribution for AI. The underwriting case requires incremental capacity to generate durable cash returns after reinvestment.",
+    "counterargument": "Customer ramp timing, pricing pressure and large partner exposures can leave Microsoft funding capacity ahead of realized demand.",
+    "watch": [
+      "Cash additions to property and equipment and finance leases",
+      "Azure utilization, commercial backlog and margins",
+      "OpenAI receivables and commercial concentration"
+    ],
+    "claims": [
+      {
+        "title": "Cash investment outpaced cash from operations",
+        "detail": "Operating cash flow rose from $136.2B to $182.9B. Cash additions to property and equipment rose from $64.6B to $115.9B, leaving $67.0B after cash capex versus $71.6B a year earlier.",
+        "section": "FY2026 10-K · Consolidated Statements of Cash Flows",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+      },
+      {
+        "title": "Cloud remains the primary growth engine",
+        "detail": "Microsoft Cloud revenue rose from $168.9B to $214.4B. Reported operating income rose from $128.5B to $155.2B.",
+        "section": "FY2026 10-K · Management’s Discussion and Analysis",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+      },
+      {
+        "title": "OpenAI exposure matters on both sides of the relationship",
+        "detail": "Microsoft disclosed $24.1B of FY2026 commercial revenue from arrangements with OpenAI, including revenue sharing, and a $6.0B receivable at year-end. Assess collection risk independently of the investment position.",
+        "section": "FY2026 10-K · OpenAI relationship disclosure",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+      }
+    ],
+    "history": [
+      [
+        2024,
+        245122,
+        109433,
+        118548,
+        44477,
+        20958
+      ],
+      [
+        2025,
+        281724,
+        128528,
+        136162,
+        64551,
+        29433
+      ],
+      [
+        2026,
+        331839,
+        155237,
+        182935,
+        115948,
+        38534
+      ]
+    ],
+    "basis": "Audited fiscal years ended June 30. D&A historical proxy is the cash flow line “Depreciation, amortization, and other.” Cash capex excludes noncash lease additions.",
+    "model": {
+      "growth": 0.13,
+      "margin": 0.45,
+      "da": 0.135,
+      "capex": [
+        0.34,
+        0.33,
+        0.31,
+        0.29,
+        0.27
+      ],
+      "tax": 0.21,
+      "nwc": 0.04,
+      "discount": 0.095,
+      "terminal": 0.03
+    },
+    "timeline": [
+      {
+        "date": "2026-04-27",
+        "kind": "Partner update",
+        "title": "Microsoft and OpenAI amend their agreement",
+        "url": "https://openai.com/index/next-phase-of-microsoft-partnership/"
+      },
+      {
+        "date": "2026-07-29",
+        "kind": "10-K",
+        "title": "Fiscal 2026 annual filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "Bull",
+        "detail": "Azure and Microsoft 365 monetization absorb capacity quickly and free cash flow expands."
+      },
+      {
+        "name": "Base",
+        "detail": "Cloud grows, but reinvestment limits near-term cash conversion."
+      },
+      {
+        "name": "Bear",
+        "detail": "Capacity commitments stay high as demand slows or partner collections weaken."
+      }
+    ],
+    "risk": "Infrastructure investment and partner concentration",
+    "gate": "Reconcile cash capex to lease-adjusted capacity commitments and test cloud utilization and OpenAI collections under a downside case.",
+    "financing": "No sponsor buyout is assumed. Review the maturity ladder, lease obligations and cash investment alongside recurring enterprise cash generation.",
+    "governance": "Review cloud and AI competition, data handling and incident controls. Monitor partner contract changes and related-party accounting.",
+    "asOf": "2026-11-06"
+  },
+  {
+    "slug": "alphabet",
+    "name": "Alphabet",
+    "ticker": "GOOGL / GOOG",
+    "exchange": "Nasdaq",
+    "status": "Public equity",
+    "headline": "Can Google fund the AI buildout without weakening Search economics?",
+    "summary": "Alphabet enters the AI transition with a strong advertising cash engine. The research question is whether new revenue keeps up with infrastructure spending and changes to distribution.",
+    "thesis": "Search and YouTube provide distribution and cash generation. Cloud and Gemini create monetization paths, but underwriting requires evidence that AI answers and cloud demand earn back incremental capacity costs.",
+    "counterargument": "Higher query volume can coexist with lower advertising value per query, and cloud growth can mask rising depreciation, power and third-party capacity costs.",
+    "watch": [
+      "Search ad monetization and traffic acquisition costs",
+      "Cash capex, depreciation and Cloud operating margin",
+      "Implementation of U.S. search distribution remedies"
+    ],
+    "claims": [
+      {
+        "title": "Cloud expanded from a smaller base",
+        "detail": "Google Cloud revenue rose from $43.2B in 2024 to $58.7B in 2025. Google Services still represented the majority of consolidated sales, so Search monetization remains central.",
+        "section": "FY2025 10-K · Note 2 Revenue",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+      },
+      {
+        "title": "Infrastructure spending accelerated",
+        "detail": "Cash capex rose from $52.5B to $91.4B in 2025. On its October 2026 earnings call, management kept its 2026 cash capex outlook at $195B–$205B and expected another significant increase in 2027.",
+        "section": "Q3 2026 management earnings call",
+        "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx"
+      },
+      {
+        "title": "Search remedies affect distribution economics",
+        "detail": "The DOJ’s case docket records the final judgment and implementation filings. Model changes in default distribution and syndication terms separately from changes in user demand.",
+        "section": "US Department of Justice · Search case docket",
+        "url": "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc"
+      }
+    ],
+    "history": [
+      [
+        2023,
+        307394,
+        84293,
+        101746,
+        32251,
+        11946
+      ],
+      [
+        2024,
+        350018,
+        112390,
+        125299,
+        52535,
+        15311
+      ],
+      [
+        2025,
+        402836,
+        129039,
+        164713,
+        91447,
+        21136
+      ]
+    ],
+    "basis": "Audited calendar-year financials through 2025. Later Q3 2026 disclosure is separate. Historical depreciation is property and equipment depreciation only.",
+    "model": {
+      "growth": 0.14,
+      "margin": 0.3,
+      "da": 0.13,
+      "capex": [
+        0.435,
+        0.44,
+        0.37,
+        0.32,
+        0.27
+      ],
+      "tax": 0.21,
+      "nwc": 0.04,
+      "discount": 0.1,
+      "terminal": 0.03
+    },
+    "timeline": [
+      {
+        "date": "2026-02-05",
+        "kind": "10-K",
+        "title": "Fiscal 2025 annual filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+      },
+      {
+        "date": "2026-10-28",
+        "kind": "Earnings call",
+        "title": "Q3 2026 results and capital expenditure outlook",
+        "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "Bull",
+        "detail": "AI queries monetize without eroding Search contribution, and Cloud absorbs capacity at attractive margins."
+      },
+      {
+        "name": "Base",
+        "detail": "Search monetization and Cloud growth partly offset a sustained reinvestment cycle."
+      },
+      {
+        "name": "Bear",
+        "detail": "Lower yield per query and adverse distribution changes coincide with elevated capital intensity."
+      }
+    ],
+    "risk": "Search monetization and infrastructure commitments",
+    "gate": "Stress Search revenue per query and traffic acquisition costs together with management’s capital expenditure outlook.",
+    "financing": "No control transaction is assumed. Evaluate liquidity after infrastructure commitments and shareholder returns. A full equity bridge would need dated securities, debt and lease balances.",
+    "governance": "Review the search and ad-tech dockets separately. Assess dual-class voting, data-use obligations, model security and jurisdiction-specific tax exposures.",
+    "asOf": "2026-11-06"
+  },
+  {
+    "slug": "anthropic",
+    "name": "Anthropic",
+    "ticker": "ANT proposed",
+    "exchange": "Proposed Nasdaq listing",
+    "status": "IPO filing",
+    "headline": "Anthropic’s prospectus puts a number on the cost of scaling Claude",
+    "summary": "The amended S-1 provides financial visibility that funding headlines cannot. It also reveals long-dated infrastructure obligations that could constrain cash generation.",
+    "thesis": "Claude’s rapid adoption has improved operating leverage, but the investment case depends on revenue durability, compute utilization and financing capacity against contracted commitments.",
+    "counterargument": "Accelerating sales and positive nine-month operating cash flow may mask payment timing, preferred-stock economics and long-dated commitments.",
+    "watch": [
+      "Quarterly revenue and operating results by period",
+      "Compute purchase and lease commitments by due date",
+      "Final offer price, fully diluted shares and voting rights"
+    ],
+    "claims": [
+      {
+        "title": "Quarterly revenue grew rapidly, with an operating loss",
+        "detail": "Q3 2026 revenue was $16.956B against $1.382B a year earlier. The latest quarter still had a $567M operating loss. The quarterly figures in the prospectus are unaudited.",
+        "section": "November 2 S-1/A · Quarterly Results of Operations",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+      },
+      {
+        "title": "Net loss and cash generation tell different stories",
+        "detail": "Nine-month 2026 operating loss was $1.260B and operating cash flow was positive $6.569B. The $104.039B net loss included a $94.324B change in fair value of financing instruments.",
+        "section": "November 2 S-1/A · Summary Financial Data and Cash Flows",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+      },
+      {
+        "title": "Commitments extend well beyond the near term",
+        "detail": "The prospectus discloses about $895.4B of aggregate committed spend, mostly compute and infrastructure, including about $69.8B due in the next 12 months. The aggregate spans multiple years and is not booked debt.",
+        "section": "November 2 S-1/A · Contractual Commitments",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+      }
+    ],
+    "history": [
+      [
+        2023,
+        41,
+        -551,
+        -1627,
+        null,
+        null
+      ],
+      [
+        2024,
+        386,
+        -2980,
+        -5692,
+        null,
+        null
+      ],
+      [
+        2025,
+        4585,
+        -8060,
+        -2637,
+        null,
+        null
+      ]
+    ],
+    "interim": {
+      "periods": [
+        "9M 2025",
+        "9M 2026"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          2545,
+          33242
+        ],
+        [
+          "Operating income (loss)",
+          -5224,
+          -1260
+        ],
+        [
+          "Operating cash flow",
+          -2024,
+          6569
+        ]
+      ]
+    },
+    "basis": "Audited annual statements from the S-1/A, with unaudited interim figures shown separately. No final offer price or traded return series is used.",
+    "timeline": [
+      {
+        "date": "2026-10-26",
+        "kind": "S-1",
+        "title": "Initial public registration filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      },
+      {
+        "date": "2026-11-02",
+        "kind": "S-1/A",
+        "title": "Amendment with September interim results",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "Bull",
+        "detail": "Paid usage and retention absorb reserved compute while unit delivery cost falls."
+      },
+      {
+        "name": "Base",
+        "detail": "Claude grows quickly, with continuing cash needs and uneven operating profitability."
+      },
+      {
+        "name": "Bear",
+        "detail": "Pricing, distribution or utilization disappoints while multi-year spending remains committed."
+      }
+    ],
+    "risk": "Compute obligations and financing dependence",
+    "gate": "Verify final offering terms and build a quarterly commitments, liquidity and dilution bridge before pricing equity.",
+    "financing": "Compare spending by contractual due date with available liquidity and committed financing. Confirm cancellation and performance clauses. Preferred shares, convertible notes and lease commitments require separate treatment.",
+    "governance": "Review proposed voting control, public benefit duties, related-party arrangements and model safety governance. Inspect litigation and the cash timing of settlements.",
+    "asOf": "2026-11-06"
+  },
+  {
+    "slug": "openai",
+    "name": "OpenAI",
+    "ticker": "Private",
+    "exchange": "OpenAI Group PBC",
+    "status": "Private company",
+    "headline": "OpenAI’s funding scale makes cash visibility more important",
+    "summary": "ChatGPT distribution, enterprise products and the API create several revenue channels. Public funding announcements leave key questions about profitability, liquidity and the cost of serving demand.",
+    "thesis": "A broad distribution base creates room for subscription, enterprise and API monetization. The underwriting case depends on contribution margin after compute, recurring customer spend and funding against contractual capacity.",
+    "counterargument": "High usage and committed capital can coexist with negative cash flow, declining unit pricing, and high dependence on a small number of infrastructure partners.",
+    "watch": [
+      "Audited consolidated accounts and cash flow",
+      "Compute economics and customer cohort retention",
+      "Signed funding terms, cap table and partner obligations"
+    ],
+    "claims": [
+      {
+        "title": "Funding headlines measure capital terms",
+        "detail": "OpenAI announced $122B in committed capital at an $852B post-money valuation on March 31, 2026. This is a dated financing reference. It does not establish unrestricted cash, current fair value or an enterprise value.",
+        "section": "March 31 funding announcement",
+        "url": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "title": "Infrastructure access brings obligations",
+        "detail": "Amazon’s September 10-Q records a $50B preferred investment and describes commercial arrangements with OpenAI. OpenAI’s announcement described a multi-year AWS agreement expansion. Analyze the investment and the customer commitment separately.",
+        "section": "Amazon Q3 2026 10-Q · OpenAI arrangements",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+      },
+      {
+        "title": "The nonprofit controls the operating company",
+        "detail": "OpenAI states that its Foundation controls OpenAI Group PBC through special voting and governance rights. Investment rights and board control need separate underwriting.",
+        "section": "OpenAI structure disclosure",
+        "url": "https://openai.com/our-structure/"
+      }
+    ],
+    "history": [],
+    "basis": "No audited standalone income statement, balance sheet or cash-flow series was verified in the public sources reviewed. Announced commitments are tracked separately from company financials.",
+    "timeline": [
+      {
+        "date": "2025-10-28",
+        "kind": "Structure",
+        "title": "Foundation and Group PBC recapitalization",
+        "url": "https://openai.com/our-structure/"
+      },
+      {
+        "date": "2026-03-31",
+        "kind": "Funding",
+        "title": "Announced financing round",
+        "url": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "date": "2026-04-27",
+        "kind": "Partner update",
+        "title": "Amended Microsoft agreement",
+        "url": "https://openai.com/index/next-phase-of-microsoft-partnership/"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "Bull",
+        "detail": "Enterprise adoption compounds and infrastructure cost per paid task falls."
+      },
+      {
+        "name": "Base",
+        "detail": "Monetization expands while capacity growth keeps funding needs material."
+      },
+      {
+        "name": "Bear",
+        "detail": "Competition compresses API prices and compute commitments outlast demand growth."
+      }
+    ],
+    "risk": "Unverified cash runway and contract exposure",
+    "gate": "Obtain audited standalone statements, signed compute commitments, a fully diluted cap table and a financing-to-cash reconciliation.",
+    "financing": "Verify closing conditions and cash receipts separately from commitments. Reconcile priority rights and convertibles, then model contracted payments by quarter. No sponsor deal is assumed.",
+    "governance": "Review nonprofit board rights, PBC purpose, related-party terms, copyright and privacy litigation, and independent safety and incident reporting.",
+    "asOf": "2026-11-06"
+  }
+]

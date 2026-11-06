@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import { dataSeries, reports, topics } from '@/content';
+import { companyIndex } from '@/content/companies';
 import { Metric } from '@/components/ui/metric';
 import { SectionLabel } from '@/components/ui/section-label';
 import { TopicChip } from '@/components/ui/topic-chip';
@@ -26,6 +27,19 @@ export default function Home() {
         </div>
       </section>
       <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-10">
+        <section className="mb-16">
+          <SectionLabel right={<Link href="/companies" className="normal-case tracking-normal text-primary hover:underline">All company research →</Link>}>Company research</SectionLabel>
+          <div className="grid gap-px border border-border bg-border md:grid-cols-3">
+            {companyIndex.slice(0, 3).map((company) => (
+              <Link key={company.slug} href={'/companies/' + company.slug} className="group bg-card p-5 hover:bg-muted/40">
+                <p className="mono text-[10px] uppercase tracking-[.15em] text-muted-foreground">{company.name} / {company.status}</p>
+                <h2 className="serif mt-3 text-xl leading-7">{company.headline}</h2>
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">{company.summary}</p>
+                <ArrowUpRight size={16} className="mt-4 text-muted-foreground group-hover:text-primary" aria-hidden />
+              </Link>
+            ))}
+          </div>
+        </section>
         <section><SectionLabel right={<Link href="/data" className="normal-case tracking-normal text-primary hover:underline" data-testid="link-open-data">Open data view →</Link>}>Market pulse / close 20 Jun 2025</SectionLabel><div className="grid grid-cols-2 gap-x-6 gap-y-7 sm:grid-cols-4">{dataSeries.map((item, index) => <div key={item.label} className="flex items-end justify-between gap-3"><Metric label={item.label} value={item.value} delta={item.change} negative={index === 1 || index === 3} /><TinySpark values={item.series} color={index % 2 ? 'hsl(var(--accent))' : 'hsl(var(--primary))'} /></div>)}</div></section>
         <section className="mt-16"><SectionLabel right={<Link href="/topics" className="normal-case tracking-normal text-primary hover:underline" data-testid="link-browse-all-topics">Browse all topics →</Link>}>The signal map</SectionLabel><div className="grid gap-px border border-border bg-border md:grid-cols-2">{topics.map((topic) => <Link href={`/topics/${topic.slug}`} key={topic.slug} className="group bg-card p-6 transition-colors hover:bg-muted/40" data-testid={`card-topic-${topic.slug}`}><div className="flex items-start justify-between"><div><div className="text-[10px] uppercase tracking-[.16em] text-primary">{topic.eyebrow}</div><h2 className="serif mt-3 text-2xl group-hover:text-primary">{topic.name}</h2></div><ChevronRight size={17} className="text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" /></div><p className="mt-4 max-w-[480px] text-sm leading-6 text-muted-foreground">{topic.happening}</p><div className="mt-5 flex flex-wrap gap-1.5">{topic.tags.slice(0, 3).map((tag) => <TopicChip key={tag}>{tag}</TopicChip>)}</div></Link>)}</div></section>
         <section className="mt-16 grid gap-10 lg:grid-cols-[1fr_340px]"><div><SectionLabel right={<Link href="/reports" className="normal-case tracking-normal text-primary hover:underline" data-testid="link-browse-reports">All reports →</Link>}>From the desk</SectionLabel><div className="divide-y divide-border">{reports.map((report, index) => <Link href={`/reports/${report.slug}`} key={report.slug} className="group flex gap-5 py-5 first:pt-0" data-testid={`row-report-${report.slug}`}><span className="mono pt-1 text-xs text-muted-foreground">0{index + 1}</span><div className="flex-1"><div className="flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-[.14em] text-muted-foreground"><span className="text-primary">{report.category}</span><span>·</span><span>{report.date}</span><span>·</span><span>{report.read}</span></div><h3 className="serif mt-2 text-xl group-hover:text-primary">{report.title}</h3><p className="mt-2 text-sm leading-6 text-muted-foreground">{report.deck}</p></div><ArrowUpRight size={16} className="mt-1 text-muted-foreground group-hover:text-primary" /></Link>)}</div></div><aside className="border-l border-border pl-6"><SectionLabel>How to use NEXUS</SectionLabel><div className="space-y-5 text-sm leading-6 text-muted-foreground"><p><span className="font-semibold text-foreground">01 / Define.</span> Start with a concept, institution, country, or industry.</p><p><span className="font-semibold text-foreground">02 / Connect.</span> Follow related objects across categories and evidence.</p><p><span className="font-semibold text-foreground">03 / Stress-test.</span> Use scenarios and risks to make the uncertainty explicit.</p></div><Link href="/methodology" className="mt-7 inline-flex items-center gap-2 text-xs font-semibold text-primary hover:underline" data-testid="link-learn-methodology">See our methodology <ChevronRight size={14} /></Link></aside></section>

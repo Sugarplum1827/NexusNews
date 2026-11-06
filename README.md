@@ -1,6 +1,6 @@
 # NexusNews
 
-Nexus is a research publication covering markets, economies, technology, and business. The Companies section adds a source-linked research dossier for Microsoft.
+Nexus is a research publication covering markets, economies, technology, and business. The Companies desk publishes source-linked articles and downloadable diligence files for Apple, Microsoft, Alphabet, Anthropic, and OpenAI.
 
 ## Run locally
 
@@ -15,9 +15,9 @@ Open `http://localhost:3000/companies`. Use `npm run typecheck` and `npm run bui
 
 ## Publish a dossier
 
-Use `content/companies/microsoft.json` as a template. Import the new file and register it in `src/content/companies.ts`. The company directory, search, and detail page read from this registry.
+Add or update a record in `content/companies/research-edition.json`. The company directory, search, and detail pages read from this edition. Publish matching PDF, Word, and Excel files under `public/company-research/<slug>-due-diligence.*`.
 
-For each claim, record the relevant filing section and its URL. Keep financial comparisons on a consistent period and unit basis. Add dated timeline entries and distinguish contemporaneous thesis revisions from retrospective notes. Record the source for both price series, align trading dates, and set the baseline to a close that precedes the announcement. The sample is a historical snapshot. Update its filings, numbers, or event prices through the content files.
+For each claim, record the filing section or announcement and its URL. Keep annual and interim periods separate and make unavailable financial fields explicit. Label forecast assumptions and historical snapshots by date. The legacy Microsoft market event is stored separately in `content/companies/microsoft.json`.
 
 Existing topics and standalone reports remain in `content/topics` and `content/reports`.
 
