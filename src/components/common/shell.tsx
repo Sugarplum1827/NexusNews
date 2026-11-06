@@ -7,11 +7,9 @@ import {
   BookOpen,
   Building2,
   CircleHelp,
-  Database,
   FileText,
   LayoutGrid,
   Menu,
-  Network,
   PanelLeft,
   Search,
   Target,
@@ -23,8 +21,6 @@ const nav = [
   { href: '/topics', label: 'Topics', icon: BookOpen },
   { href: '/companies', label: 'Companies', icon: Building2 },
   { href: '/reports', label: 'Reports', icon: FileText },
-  { href: '/data', label: 'Data', icon: Database },
-  { href: '/models', label: 'Models', icon: Network },
 ];
 
 export function Shell({ children }: { children: ReactNode }) {
@@ -54,7 +50,6 @@ export function Shell({ children }: { children: ReactNode }) {
           {nav.map(({ href, label, icon: Icon }) => (
             <Link key={href} href={href} onClick={() => setMobileOpen(false)} className={`flex items-center gap-3 border-l-2 px-3 py-2.5 text-[13px] transition-colors ${isActive(href) ? 'border-zinc-200 bg-white/[.08] text-zinc-100' : 'border-transparent text-stone-400 hover:bg-white/[.05] hover:text-stone-100'}`} data-testid={`link-nav-${label.toLowerCase().replace(' ', '-')}`}>
               <Icon size={16} strokeWidth={1.7} /><span>{label}</span>
-              {label === 'Models' && <span className="ml-auto mono text-[9px] text-zinc-200">BETA</span>}
             </Link>
           ))}
         </nav>
