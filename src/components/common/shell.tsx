@@ -1,9 +1,8 @@
 'use client';
 
-import { type FormEvent, type ReactNode, useEffect, useState } from 'react';
+import { type FormEvent, type ReactNode, useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { useTheme } from 'next-themes';
 import {
   BookOpen,
   Building2,
@@ -12,11 +11,9 @@ import {
   FileText,
   LayoutGrid,
   Menu,
-  Moon,
   Network,
   PanelLeft,
   Search,
-  Sun,
   Target,
   X,
 } from 'lucide-react';
@@ -33,15 +30,9 @@ const nav = [
 export function Shell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [query, setQuery] = useState('');
 
-  useEffect(() => setMounted(true), []);
-
-  const dark = mounted && resolvedTheme === 'dark';
-  const toggleTheme = () => setTheme(dark ? 'light' : 'dark');
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
   const submitSearch = (event: FormEvent) => {
     event.preventDefault();
@@ -89,7 +80,6 @@ export function Shell({ children }: { children: ReactNode }) {
               <span className="absolute right-2 top-1/2 hidden -translate-y-1/2 border border-border px-1.5 py-0.5 mono text-[9px] text-muted-foreground sm:block">⌘ K</span>
             </form>
             <div className="ml-auto flex items-center gap-1">
-              <button onClick={toggleTheme} className="rounded p-2 text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Toggle theme" data-testid="button-theme-toggle">{dark ? <Sun size={17} /> : <Moon size={17} />}</button>
               <Link href="/search" className="hidden items-center gap-2 border-l border-border pl-4 text-[11px] text-muted-foreground hover:text-foreground sm:flex" data-testid="link-search"><PanelLeft size={15} /> Search all</Link>
             </div>
           </div>

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { BookOpen, ChevronDown, ChevronRight } from 'lucide-react';
+import { ArrowUpRight, BookOpen, ChevronDown, ChevronRight, Download, FileText } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { getTopic, topics } from '@/content';
 import { Metric } from '@/components/ui/metric';
@@ -21,11 +21,12 @@ export function TopicPageClient({ slug }: { slug: string }) {
   if (!topic) {
     notFound();
   }
+  const reportFile = `/due-diligence/${topic.slug}.pdf`;
   return (
     <div className="mx-auto max-w-[1180px] px-5 py-10 sm:px-10 sm:py-14">
       <div className="mb-7 border-y border-border lg:hidden">
         <button onClick={() => setTocOpen((value) => !value)} className="flex w-full items-center justify-between py-4 text-[10px] font-semibold uppercase tracking-[.18em] text-muted-foreground" aria-expanded={tocOpen} data-testid="button-topic-toc"><span className="flex items-center gap-2"><BookOpen size={14} /> On this page</span><ChevronDown size={15} className={`transition-transform ${tocOpen ? 'rotate-180' : ''}`} /></button>
-        {tocOpen && <nav className="grid gap-3 border-t border-border pb-4 pt-4 text-xs text-muted-foreground"><a href="#what-happening" className="hover:text-primary">What is happening?</a><a href="#why" className="hover:text-primary">Why does it matter?</a><a href="#risks" className="hover:text-primary">What can go wrong?</a><a href="#monitor" className="hover:text-primary">What to monitor</a><a href="#sources" className="hover:text-primary">Sources & limitations</a></nav>}
+        {tocOpen && <nav className="grid gap-3 border-t border-border pb-4 pt-4 text-xs text-muted-foreground"><a href="#what-happening" className="hover:text-primary">What is happening?</a><a href="#why" className="hover:text-primary">Why does it matter?</a><a href="#risks" className="hover:text-primary">What can go wrong?</a><a href="#monitor" className="hover:text-primary">What to monitor</a><a href="#sources" className="hover:text-primary">Sources & limitations</a><a href="#due-diligence" className="block hover:text-primary">Due diligence PDF</a></nav>}
       </div>
       <div className="grid gap-12 lg:grid-cols-[minmax(0,760px)_250px]">
         <article>
@@ -57,11 +58,32 @@ export function TopicPageClient({ slug }: { slug: string }) {
           <div id="monitor" className="mt-14 scroll-mt-24"><SectionLabel>What to monitor</SectionLabel><div className="grid gap-0 border-y border-border sm:grid-cols-2">{topic.monitor.map((item, index) => <div key={item} className="flex gap-3 border-b border-border py-4 text-sm last:border-0"><span className="mono text-[10px] text-primary">0{index + 1}</span><span>{item}</span></div>)}</div></div>
           <div className="mt-14"><SectionLabel>Timeline</SectionLabel><div className="relative ml-2 border-l border-border">{topic.timeline.map((item) => <div key={item.year} className="relative pb-7 pl-7 last:pb-0"><span className="absolute -left-[5px] top-1 h-2 w-2 rounded-full bg-primary" /><span className="mono text-[10px] text-primary">{item.year}</span><p className="mt-1 text-sm">{item.event}</p></div>)}</div></div>
           <div id="sources" className="mt-14 scroll-mt-24 border-t border-border pt-6"><SectionLabel>Sources & limitations</SectionLabel><ul className="space-y-2 text-sm text-muted-foreground">{topic.sources.map((source) => <li key={source} className="flex gap-2"><span className="text-primary">—</span>{source}</li>)}</ul><p className="mt-5 text-xs leading-5 text-muted-foreground">This entry is a structured synthesis, not investment advice. Figures are selected to show direction and context; see the methodology for source treatment and limitations.</p></div>
+          <section id="due-diligence" aria-labelledby="due-diligence-title" className="mt-14 scroll-mt-24 border border-border bg-card p-5 sm:p-6">
+            <div className="flex items-start gap-3">
+              <FileText aria-hidden size={20} className="mt-1 shrink-0 text-primary" />
+              <div>
+                <h2 id="due-diligence-title" className="serif text-2xl">Due diligence report</h2>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  Read the PDF edition of the research, risk assessment, and sources for {topic.name}.
+                </p>
+              </div>
+            </div>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <a href={reportFile} target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90">
+                View PDF <ArrowUpRight aria-hidden size={15} />
+              </a>
+              <a href={reportFile} download={topic.slug + "-due-diligence.pdf"}
+                className="inline-flex items-center gap-2 border border-border px-4 py-2.5 text-sm font-semibold hover:border-primary">
+                Download PDF <Download aria-hidden size={15} />
+              </a>
+            </div>
+          </section>
         </article>
         <aside className="hidden lg:block">
           <div className="sticky top-24 border-l border-border pl-5">
             <div className="text-[10px] uppercase tracking-[.18em] text-muted-foreground">On this page</div>
-            <nav className="mt-4 space-y-3 text-xs text-muted-foreground"><a href="#what-happening" className="block hover:text-primary">What is happening?</a><a href="#why" className="block hover:text-primary">Why does it matter?</a><a href="#risks" className="block hover:text-primary">What can go wrong?</a><a href="#monitor" className="block hover:text-primary">What to monitor</a><a href="#sources" className="block hover:text-primary">Sources & limitations</a></nav>
+            <nav className="mt-4 space-y-3 text-xs text-muted-foreground"><a href="#what-happening" className="block hover:text-primary">What is happening?</a><a href="#why" className="block hover:text-primary">Why does it matter?</a><a href="#risks" className="block hover:text-primary">What can go wrong?</a><a href="#monitor" className="block hover:text-primary">What to monitor</a><a href="#sources" className="block hover:text-primary">Sources & limitations</a><a href="#due-diligence" className="block hover:text-primary">Due diligence PDF</a></nav>
             <div className="mt-10 border-t border-border pt-4"><div className="text-[10px] uppercase tracking-[.16em] text-muted-foreground">Related</div>{topic.related.map((item) => { const related = topics.find((entry) => entry.slug === item); return related ? <Link key={item} href={`/topics/${item}`} className="mt-3 flex items-center justify-between text-xs hover:text-primary" data-testid={`link-related-${item}`}>{related.name}<ChevronRight size={13} /></Link> : null; })}</div>
           </div>
         </aside>
