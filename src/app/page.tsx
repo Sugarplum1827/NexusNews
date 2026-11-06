@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import { dataSeries, reports, topics } from '@/content';
 import { Metric } from '@/components/ui/metric';
@@ -12,9 +13,15 @@ export default function Home() {
       <section className="reading-grid border-b border-border px-5 pb-14 pt-14 sm:px-10 sm:pb-20 sm:pt-20">
         <div className="mx-auto max-w-[1180px]">
           <div className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[.24em] text-primary"><span className="h-2 w-2 rounded-full bg-accent" /> Research desk / 20 June 2025</div>
-          <div className="mt-8 grid gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-end">
+          <div className="mt-8 grid gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
             <div><h1 className="serif max-w-[720px] text-5xl leading-[1.03] tracking-[-.045em] sm:text-7xl">Make sense of the <em className="text-primary">moving parts.</em></h1><p className="mt-7 max-w-[590px] text-base leading-7 text-muted-foreground">NEXUS is a living analytical encyclopedia for markets, economies, technology, and business — designed to move from concepts to evidence, risks, and scenarios.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/topics" className="inline-flex items-center gap-2 bg-primary px-4 py-2.5 text-xs font-semibold text-primary-foreground hover:opacity-90" data-testid="link-explore-topics">Explore the encyclopedia <ChevronRight size={15} /></Link><Link href="/reports" className="inline-flex items-center gap-2 border border-border bg-card px-4 py-2.5 text-xs font-semibold hover:border-primary" data-testid="link-read-reports">Read latest reports <ArrowUpRight size={14} /></Link></div></div>
-            <div className="border-l border-border pl-6 lg:mb-1"><div className="mono text-[10px] uppercase tracking-[.16em] text-muted-foreground">Signal / 01</div><p className="serif mt-4 text-2xl leading-tight">“The bottleneck is no longer model access. It is the conversion of abundant intelligence into scarce, measurable output.”</p><div className="mt-5 text-[11px] text-muted-foreground">NEXUS synthesis · AI investment cycle</div></div>
+            <figure className="relative mx-auto w-full max-w-[375px] overflow-hidden border border-border bg-black">
+              <Image src="/nexus-signal.png" alt="White sketch of a suited figure with a vintage television for a head"
+                width={375} height={375} className="h-auto w-full" />
+              <figcaption className="mono absolute bottom-3 left-3 text-[10px] uppercase tracking-[.16em] text-zinc-300">
+                Nexus / Signal 01
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

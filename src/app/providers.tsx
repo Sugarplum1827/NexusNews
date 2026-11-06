@@ -9,7 +9,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 export function Providers({ children }: { children: ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
   return (
-    <ThemeProvider attribute="class" defaultTheme="light" storageKey="nexus-theme" enableSystem={false}>
+    <ThemeProvider attribute="class" defaultTheme="dark" storageKey="nexus-theme" enableSystem={false}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           {children}

@@ -53,7 +53,7 @@ export function Shell({ children }: { children: ReactNode }) {
       <aside className={`fixed inset-y-0 left-0 z-40 isolate flex w-[248px] flex-col border-r border-sidebar-border bg-[hsl(var(--sidebar))] px-4 py-5 text-sidebar-foreground shadow-[10px_0_30px_rgba(0,0,0,0.18)] [backdrop-filter:none] transition-transform duration-300 md:translate-x-0 ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex items-center justify-between px-2">
           <Link href="/" className="flex items-center gap-3" data-testid="link-logo">
-            <span className="grid h-8 w-8 place-items-center border border-teal-300/50 text-sm font-bold text-teal-200">N</span>
+            <span className="grid h-8 w-8 place-items-center border border-zinc-200/50 text-sm font-bold text-zinc-100">N</span>
             <span className="text-[15px] font-semibold tracking-[.28em] text-stone-100">NEXUS</span>
           </Link>
           <button className="rounded p-1 text-stone-400 hover:bg-white/10 md:hidden" onClick={() => setMobileOpen(false)} aria-label="Close navigation" data-testid="button-close-nav"><X size={17} /></button>
@@ -61,20 +61,20 @@ export function Shell({ children }: { children: ReactNode }) {
         <div className="mt-10 px-2 text-[10px] font-medium uppercase tracking-[.22em] text-stone-500">Navigate</div>
         <nav className="mt-3 space-y-1" aria-label="Primary navigation">
           {nav.map(({ href, label, icon: Icon }) => (
-            <Link key={href} href={href} onClick={() => setMobileOpen(false)} className={`flex items-center gap-3 border-l-2 px-3 py-2.5 text-[13px] transition-colors ${isActive(href) ? 'border-teal-300 bg-white/[.08] text-teal-100' : 'border-transparent text-stone-400 hover:bg-white/[.05] hover:text-stone-100'}`} data-testid={`link-nav-${label.toLowerCase().replace(' ', '-')}`}>
+            <Link key={href} href={href} onClick={() => setMobileOpen(false)} className={`flex items-center gap-3 border-l-2 px-3 py-2.5 text-[13px] transition-colors ${isActive(href) ? 'border-zinc-200 bg-white/[.08] text-zinc-100' : 'border-transparent text-stone-400 hover:bg-white/[.05] hover:text-stone-100'}`} data-testid={`link-nav-${label.toLowerCase().replace(' ', '-')}`}>
               <Icon size={16} strokeWidth={1.7} /><span>{label}</span>
-              {label === 'Models' && <span className="ml-auto mono text-[9px] text-teal-300">BETA</span>}
+              {label === 'Models' && <span className="ml-auto mono text-[9px] text-zinc-200">BETA</span>}
             </Link>
           ))}
         </nav>
         <div className="mt-9 px-2 text-[10px] font-medium uppercase tracking-[.22em] text-stone-500">Reference</div>
         <nav className="mt-3 space-y-1">
-          <Link href="/methodology" onClick={() => setMobileOpen(false)} className={`flex items-center gap-3 border-l-2 px-3 py-2.5 text-[13px] ${isActive('/methodology') ? 'border-teal-300 bg-white/[.08] text-teal-100' : 'border-transparent text-stone-400 hover:bg-white/[.05] hover:text-stone-100'}`} data-testid="link-nav-methodology"><CircleHelp size={16} strokeWidth={1.7} /><span>Methodology</span></Link>
-          <Link href="/about" onClick={() => setMobileOpen(false)} className={`flex items-center gap-3 border-l-2 px-3 py-2.5 text-[13px] ${isActive('/about') ? 'border-teal-300 bg-white/[.08] text-teal-100' : 'border-transparent text-stone-400 hover:bg-white/[.05] hover:text-stone-100'}`} data-testid="link-nav-about"><Target size={16} strokeWidth={1.7} /><span>About NEXUS</span></Link>
+          <Link href="/methodology" onClick={() => setMobileOpen(false)} className={`flex items-center gap-3 border-l-2 px-3 py-2.5 text-[13px] ${isActive('/methodology') ? 'border-zinc-200 bg-white/[.08] text-zinc-100' : 'border-transparent text-stone-400 hover:bg-white/[.05] hover:text-stone-100'}`} data-testid="link-nav-methodology"><CircleHelp size={16} strokeWidth={1.7} /><span>Methodology</span></Link>
+          <Link href="/about" onClick={() => setMobileOpen(false)} className={`flex items-center gap-3 border-l-2 px-3 py-2.5 text-[13px] ${isActive('/about') ? 'border-zinc-200 bg-white/[.08] text-zinc-100' : 'border-transparent text-stone-400 hover:bg-white/[.05] hover:text-stone-100'}`} data-testid="link-nav-about"><Target size={16} strokeWidth={1.7} /><span>About NEXUS</span></Link>
         </nav>
         <div className="mt-auto border-t border-sidebar-border pt-4">
           <div className="px-2 text-[10px] uppercase tracking-[.18em] text-stone-500">Desk status</div>
-          <div className="mt-3 flex items-center gap-2 px-2 text-xs text-stone-300"><span className="h-2 w-2 rounded-full bg-teal-300" /> All systems nominal</div>
+          <div className="mt-3 flex items-center gap-2 px-2 text-xs text-stone-300"><span className="h-2 w-2 rounded-full bg-zinc-200" /> All systems nominal</div>
           <div className="mt-2 flex items-center justify-between px-2 mono text-[10px] text-stone-500"><span>Edition 02.25</span><span>UTC−05</span></div>
         </div>
       </aside>
