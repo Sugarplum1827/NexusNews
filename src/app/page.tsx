@@ -18,7 +18,7 @@ export default function Home() {
             <div><h1 className="serif max-w-[720px] text-5xl leading-[1.03] tracking-[-.045em] sm:text-7xl">Make sense of the <em className="text-primary">moving parts.</em></h1><p className="mt-7 max-w-[590px] text-base leading-7 text-muted-foreground">NEXUS is a living analytical encyclopedia for markets, economies, technology, and business — designed to move from concepts to evidence, risks, and scenarios.</p>
             <div className="mt-8 flex flex-wrap gap-3"><Link
               href="/topics"
-              className="inline-flex items-center gap-2 bg-primary px-4 py-2.5 text-xs font-semibold text-black hover:opacity-90"
+              className="inline-flex items-center gap-2 bg-primary px-4 py-2.5 text-xs font-semibold text-primary-foreground hover:opacity-90"
               data-testid="link-explore-topics"
             >
               Explore the encyclopedia <ChevronRight size={15} />
